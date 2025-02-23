@@ -2,7 +2,7 @@
 title: "These are the guided sections for knowing Seaborn"
 listing:
   contents: posts
-  sort: "date asc"
+  sort: "order asc"
   type: default
   categories: true
 ---
