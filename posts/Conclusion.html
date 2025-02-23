@@ -20,40 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -166,21 +132,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="installation-and-setup" class="level1">
-<h1><strong>Installation and Setup</strong></h1>
-<p>We can install the latest version of Seaborn using pip (Python’s Package Manager).</p>
-<p>Open your Command Prompt/Terminal on your computer and paste the following code to install the latest Seaborn version:</p>
-<div id="cell-4" class="cell" data-vscode="{&quot;languageId&quot;:&quot;powershell&quot;}">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>pip install seaborn</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>You can verify whether Seaborn is installed or not by opening a Python environment (for e.g.&nbsp;Jupyter Notebook) and typing:</p>
-<div id="cell-6" class="cell" data-vscode="{&quot;languageId&quot;:&quot;powershell&quot;}">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>pip show seaborn</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>If your installation fails, verify that you are running Python 3.8+ versions since Python 3.8+ versions support seaborn.</p>
-<section id="dependencies" class="level3">
-<h3 class="anchored" data-anchor-id="dependencies">Dependencies</h3>
-<p>Seaborn has some dependencies that are required for the proper functioning of the library. Libraries like Matplotlib, Numpy, and Pandas are the mandatory dependencies necessary for the appropriate functioning of Seaborn. Libraries like SciPy, fastcluster, and statsmodels help enhance the features for data visualization.</p>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">📌 Conclusion</h2>
+<p>Seaborn is a powerful and intuitive <strong>data visualization library</strong> that simplifies the process of creating <strong>statistical graphics</strong> in Python. Built on <strong>Matplotlib</strong> and integrated with <strong>Pandas</strong>, it provides an elegant way to visualize <strong>relationships, distributions, and categorical data</strong> with minimal effort.</p>
+<section id="why-use-seaborn" class="level3">
+<h3 class="anchored" data-anchor-id="why-use-seaborn">🔹 Why Use Seaborn?</h3>
+<ul>
+<li><strong>Ease of Use</strong>: Generates complex visualizations with just a few lines of code.<br>
+</li>
+<li><strong>Beautiful Aesthetics</strong>: Offers built-in themes for professional-looking graphs.<br>
+</li>
+<li><strong>Statistical Insights</strong>: Enables quick statistical analysis with features like regression plots and KDE plots.<br>
+</li>
+<li><strong>Seamless Integration</strong>: Works smoothly with Pandas DataFrames for efficient data handling.</li>
+</ul>
+</section>
+<section id="final-thoughts" class="level3">
+<h3 class="anchored" data-anchor-id="final-thoughts">🔹 Final Thoughts</h3>
+<p>Whether you’re a <strong>beginner exploring data</strong> or an <strong>experienced data scientist</strong>, Seaborn helps you <strong>tell compelling stories with data</strong>. With its rich feature set and <strong>concise syntax</strong>, it’s a must-have tool in every Python data analyst’s toolkit.</p>
+<p>For further learning, check out the <strong>official documentation</strong> and try out different visualizations on your own datasets. 🚀</p>
 
 
 </section>

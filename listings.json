@@ -3,8 +3,9 @@
     "listing": "/blog.html",
     "items": [
       "/posts/Introduction.html",
-      "/posts/reference.html",
       "/posts/Use_Cases.html",
+      "/posts/Conclusion.html",
+      "/posts/reference.html",
       "/posts/Installation and Setup.html"
     ]
   }
