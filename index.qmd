@@ -2,6 +2,7 @@
 format: html
 ---
 <div class="waves"></div>
+<div class="stars"></div>
 
 
 # Welcome to Our Seaborn Blog! 🎨📊  
