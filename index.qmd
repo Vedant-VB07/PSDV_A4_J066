@@ -1,6 +1,8 @@
 ---
 format: html
 ---
+<div class="waves"></div>
+
 
 # Welcome to Our Seaborn Blog! 🎨📊  
 
