@@ -30,8 +30,15 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Welcome to Our Seaborn Blog!",
+    "title": "Welcome to Our Seaborn Blog",
     "section": "",
-    "text": "Hello and welcome! 👋\nThis blog is dedicated to exploring Seaborn, a powerful Python library for data visualization. Whether you’re a beginner or an experienced data analyst, you’ll find useful insights, practical examples, and hands-on demonstrations to help you create stunning visualizations with ease.\n🔹 What You’ll Find Here: ✔️ Step-by-step guides on Seaborn’s features ✔️ Code snippets with explanations ✔️ Real-world use cases and best practices ✔️ Interactive visualizations\nFeel free to explore, experiment, and enhance your data storytelling skills. Let’s dive into the world of Seaborn and make data visualization effortless! 🚀"
+    "text": "Hello and welcome! 👋\nThis blog is dedicated to exploring Seaborn, a powerful Python library for data visualization. Whether you’re a beginner or an experienced data analyst, you’ll find useful insights, practical examples, and hands-on demonstrations to help you create stunning visualizations with ease.\n\n\n\n✅ Step-by-step guides on Seaborn’s features\n\n✅ Code snippets with explanations\n\n✅ Real-world use cases and best practices\n\n✅ Interactive visualizations\n\nFeel free to explore, experiment, and enhance your data storytelling skills. Let’s dive into the world of Seaborn and make data visualization effortless! 🚀"
+  },
+  {
+    "objectID": "index.html#what-youll-find-here",
+    "href": "index.html#what-youll-find-here",
+    "title": "Welcome to Our Seaborn Blog",
+    "section": "",
+    "text": "✅ Step-by-step guides on Seaborn’s features\n\n✅ Code snippets with explanations\n\n✅ Real-world use cases and best practices\n\n✅ Interactive visualizations\n\nFeel free to explore, experiment, and enhance your data storytelling skills. Let’s dive into the world of Seaborn and make data visualization effortless! 🚀"
   }
 ]
