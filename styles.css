@@ -1,8 +1,18 @@
-/* Gradient Navbar */
+/* Animated Gradient Navbar */
+@keyframes gradientAnimation {
+    0% { background: linear-gradient(135deg, #4A90E2, #8E44AD); }
+    25% { background: linear-gradient(135deg, #1ABC9C, #3498DB); }
+    50% { background: linear-gradient(135deg, #16A085, #2ECC71); }
+    75% { background: linear-gradient(135deg, #4A90E2, #9B59B6); }
+    100% { background: linear-gradient(135deg, #4A90E2, #8E44AD); }
+}
+
 .navbar {
-    background: linear-gradient(135deg, #4A90E2, #8E44AD); /* Cool gradient colors */
-    border-bottom: 3px solid #6C5CE7;
+    animation: gradientAnimation 10s infinite alternate ease-in-out;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.2);
     padding: 10px 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
 }
 
 /* Navbar Links */
@@ -14,17 +24,33 @@
 
 /* Navbar Hover Effects */
 .navbar a:hover {
-    color: #FFD700 !important; /* Gold hover effect */
+    color: #FFD700 !important;
     text-decoration: underline;
 }
 
-/* Style Active Page */
-.navbar .active {
-    border-bottom: 2px solid #FFD700; /* Highlight active page */
+/* Soft Shadow for Depth */
+.navbar {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Adding Soft Shadows */
-.navbar {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    border-radius: 8px;
+/* Glowing Cursor Effect */
+.navbar a {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #FFD700;
+    bottom: -5px;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar a:hover::after {
+    transform: scaleX(1);
 }
