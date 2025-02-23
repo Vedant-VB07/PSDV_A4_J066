@@ -10,7 +10,7 @@
 }
 
 .navbar {
-    animation: gradientAnimation 5s infinite alternate ease-in-out;
+    animation: gradientAnimation 10s infinite alternate ease-in-out;
     border-bottom: 3px solid rgba(255, 255, 255, 0.2);
     padding: 10px 20px;
     border-radius: 8px;
