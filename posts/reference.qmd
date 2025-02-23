@@ -1,6 +1,8 @@
 ---
-title: "References & Further Reading"
-format: html
+title: "References"
+categories: ["References"]
+date: 2024-02-23
+format: html
 ---
 
 ## 📌 References & Further Reading  
