@@ -1,7 +1,8 @@
 /* 🌌 Starry Night Background */
 body {
     background: #000;
-    overflow: auto;
+    overflow-y: auto;  /* Enables vertical scrolling */
+    overflow-x: hidden; /* Prevents horizontal scroll issues */
     margin: 0;
     padding: 0;
 }
