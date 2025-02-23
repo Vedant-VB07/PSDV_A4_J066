@@ -1,5 +1,4 @@
 ---
-title: "Welcome to Our Seaborn Blog"
 format: html
 ---
 
