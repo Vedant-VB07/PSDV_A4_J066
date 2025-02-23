@@ -2,7 +2,7 @@
 title: "PSDV Assignment 4"
 listing:
   contents: posts
-  sort: "date desc"
+  sort: "date asc"
   type: default
   categories: true
 ---
