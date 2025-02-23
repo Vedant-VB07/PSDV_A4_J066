@@ -1,0 +1,22 @@
+---
+title: "References & Further Reading"
+format: html
+---
+
+## 📌 References & Further Reading  
+
+For a deeper understanding of Seaborn and its capabilities, explore the following resources:  
+
+### 🔹 Official Documentation  
+- 📄 **Seaborn Documentation**: [https://seaborn.pydata.org](https://seaborn.pydata.org)  
+
+### 🔹 Tutorials & Guides  
+- 📖 **Seaborn Tutorial (Official)**: [https://seaborn.pydata.org/tutorial.html](https://seaborn.pydata.org/tutorial.html)  
+- 🎥 **Seaborn Crash Course (YouTube)**: [https://www.youtube.com/results?search_query=seaborn+tutorial](https://www.youtube.com/results?search_query=seaborn+tutorial)  
+- 📝 **Matplotlib vs. Seaborn (Comparison)**: [https://realpython.com/python-matplotlib-guide/](https://realpython.com/python-matplotlib-guide/)  
+
+### 🔹 Additional Learning  
+- 📊 **Pandas Documentation** (for DataFrames): [https://pandas.pydata.org](https://pandas.pydata.org)  
+- 📚 **Matplotlib Documentation**: [https://matplotlib.org/stable/contents.html](https://matplotlib.org/stable/contents.html)  
+
+These resources will help you master Seaborn and enhance your data visualization skills. 🚀  
