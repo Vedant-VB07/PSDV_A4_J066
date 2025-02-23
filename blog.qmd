@@ -6,5 +6,4 @@ listing:
   type: default
   categories: false
   fields: [title] # Only show titles, no content previews
-  link-title: true # Makes the title clickable
 ---
