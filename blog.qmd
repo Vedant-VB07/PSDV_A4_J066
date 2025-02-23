@@ -1,5 +1,5 @@
 ---
-title: "Hello World"
+title: "These are the guided sections for knowing Seaborn"
 listing:
   contents: posts
   sort: "date asc"
