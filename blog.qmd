@@ -1,8 +1,8 @@
 ---
-title: "These are the guided sections for knowing Seaborn"
+title: "Blog"
 listing:
   contents: posts
-  sort: "date asc"
-  type: default
   categories: true
+  sort: "date desc"
+  filter-default: false  # This removes the "All" option
 ---
