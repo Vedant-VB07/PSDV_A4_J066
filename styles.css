@@ -39,20 +39,20 @@ body {
     box-shadow: inherit;
 }
 
-/* 🚀 Smooth Transitioning Dark Navbar */
+/* 🚀 Smooth Transitioning Gray-Black Gradient Navbar */
 @keyframes navbarFade {
-    0% { background: rgba(20, 20, 20, 0.8); }
-    50% { background: rgba(15, 15, 15, 0.9); }
-    100% { background: rgba(10, 10, 10, 1); }
+    0% { background: linear-gradient(135deg, #444, #111); }
+    50% { background: linear-gradient(135deg, #333, #000); }
+    100% { background: linear-gradient(135deg, #222, #000); }
 }
 
 .navbar {
     animation: navbarFade 5s infinite alternate ease-in-out;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
     padding: 15px 25px;
     border-radius: 8px;
     transition: all 0.4s ease-in-out;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
 }
 
 /* 🔗 Pop-Out Hover Effect for ALL Links */
@@ -69,4 +69,9 @@ a:hover {
     transform: scale(1.2);
     color: #FFD700 !important; /* Glowing Golden Effect */
     text-shadow: 0px 0px 10px rgba(255, 215, 0, 0.8);
+}
+
+/* 🎨 Additional Styling for Smoothness */
+.navbar, a {
+    transition: all 0.4s ease-in-out;
 }
