@@ -4,7 +4,7 @@
     "href": "blog.html",
     "title": "These are the guided sections for knowing Seaborn",
     "section": "",
-    "text": "Introduction to Seaborn\n\n\n\n\n\n\nIntroduction\n\n\n\n\n\n\n\n\n\nFeb 23, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nUse Cases of Seaborn\n\n\n\n\n\n\nUse Cases\n\n\n\n\n\n\n\n\n\nFeb 23, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nUse Cases of Seaborn\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nReferences & Further Reading\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Introduction to Seaborn\n\n\n\n\n\n\nIntroduction\n\n\n\n\n\n\n\n\n\nFeb 23, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nReferences & Further Reading\n\n\n\n\n\n\nReferences\n\n\n\n\n\n\n\n\n\nFeb 23, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nUse Cases of Seaborn\n\n\n\n\n\n\nUse Cases\n\n\n\n\n\n\n\n\n\nFeb 23, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nInstallation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/Use_Cases.html",
@@ -12,6 +12,20 @@
     "title": "Use Cases of Seaborn",
     "section": "",
     "text": "Use Cases of Seaborn:\nSeaborn is widely used for statistical data visualization in various fields. Its ability to create beautiful, insightful, and easy-to-understand graphs makes it an essential tool for data analysis. Below are some key use cases:\n\nExploratory Data Analysis (EDA) EDA is an essential step in data science. Seaborn provides quick insights into datasets using functions like pair plots, box plots, and distribution plots.\n\n📌 Example: Visualizing relationships in the Titanic dataset.\n✅ Use Case: Helps data scientists understand correlations, detect outliers, and analyze distributions in large datasets.\n\nimport seaborn as sns\nimport matplotlib.pyplot as plt\n\ntitanic = sns.load_dataset(\"titanic\")\n\nsns.pairplot(titanic, hue=\"survived\")\nplt.show()\n\n\n\n\n\n\n\n\n\nBusiness & Financial Analytics Seaborn is widely used in business to analyze sales trends, customer behavior, and financial performance.\n\n📌 Example: Sales trends over time. ✅ Use Case: Used in financial analytics, stock market analysis, and trend forecasting.\n\n\nflights = sns.load_dataset(\"flights\")\n\nsns.lineplot(x=\"year\", y=\"passengers\", data=flights)\nplt.show()\n\n\n\n\n\n\n\n\n\nMachine Learning & AI Seaborn is commonly used to analyze feature relationships in machine learning datasets.\n\n📌 Example: Understanding relationships in ML datasets.\n✅ Use Case: Helps feature selection, model evaluation, and visualizing predictions.\n\niris = sns.load_dataset(\"iris\")\n\nsns.pairplot(iris, hue=\"species\")\nplt.show()\n\n\n\n\n\n\n\n\n\nSocial & Demographic Analysis Seaborn can be used to analyze population statistics, survey data, and demographic trends.\n\n📌 Example: Gender-wise survival rates in Titanic dataset\n✅ Use Case: Used in government reports, sociology, and market research.\n\nsns.barplot(x=\"sex\", y=\"survived\", data=titanic)\nplt.show()"
+  },
+  {
+    "objectID": "posts/Introduction.html",
+    "href": "posts/Introduction.html",
+    "title": "Introduction to Seaborn",
+    "section": "",
+    "text": "Introduction\nSeaborn is a Python data visualization library that helps us create visually appealing statistical graphs. It is built over Matplotlib, providing an interface to create graphics. It works seamlessly with Pandas dataframes and Numpy arrays, performing all the necessary calculations on its backend and letting you focus on your plots’ meaning rather than figuring out how to plot them."
+  },
+  {
+    "objectID": "posts/Installation and Setup.html",
+    "href": "posts/Installation and Setup.html",
+    "title": "Installation",
+    "section": "",
+    "text": "Installation and Setup\nWe can install the latest version of Seaborn using pip (Python’s Package Manager).\nOpen your Command Prompt/Terminal on your computer and paste the following code to install the latest Seaborn version:\n\npip install seaborn\n\nYou can verify whether Seaborn is installed or not by opening a Python environment (for e.g. Jupyter Notebook) and typing:\n\npip show seaborn\n\nIf your installation fails, verify that you are running Python 3.8+ versions since Python 3.8+ versions support seaborn.\n\nDependencies\nSeaborn has some dependencies that are required for the proper functioning of the library. Libraries like Matplotlib, Numpy, and Pandas are the mandatory dependencies necessary for the appropriate functioning of Seaborn. Libraries like SciPy, fastcluster, and statsmodels help enhance the features for data visualization."
   },
   {
     "objectID": "posts/reference.html",
@@ -26,20 +40,6 @@
     "title": "References & Further Reading",
     "section": "",
     "text": "For a deeper understanding of Seaborn and its capabilities, explore the following resources:\n\n\n\n📄 Seaborn Documentation: https://seaborn.pydata.org\n\n\n\n\n\n📖 Seaborn Tutorial (Official): https://seaborn.pydata.org/tutorial.html\n\n🎥 Seaborn Crash Course (YouTube): https://www.youtube.com/results?search_query=seaborn+tutorial\n\n📝 Matplotlib vs. Seaborn (Comparison): https://realpython.com/python-matplotlib-guide/\n\n\n\n\n\n📊 Pandas Documentation (for DataFrames): https://pandas.pydata.org\n\n📚 Matplotlib Documentation: https://matplotlib.org/stable/contents.html\n\nThese resources will help you master Seaborn and enhance your data visualization skills. 🚀"
-  },
-  {
-    "objectID": "posts/Installation and Setup.html",
-    "href": "posts/Installation and Setup.html",
-    "title": "Use Cases of Seaborn",
-    "section": "",
-    "text": "Installation and Setup\nWe can install the latest version of Seaborn using pip (Python’s Package Manager).\nOpen your Command Prompt/Terminal on your computer and paste the following code to install the latest Seaborn version:\n\npip install seaborn\n\nYou can verify whether Seaborn is installed or not by opening a Python environment (for e.g. Jupyter Notebook) and typing:\n\npip show seaborn\n\nIf your installation fails, verify that you are running Python 3.8+ versions since Python 3.8+ versions support seaborn.\n\nDependencies\nSeaborn has some dependencies that are required for the proper functioning of the library. Libraries like Matplotlib, Numpy, and Pandas are the mandatory dependencies necessary for the appropriate functioning of Seaborn. Libraries like SciPy, fastcluster, and statsmodels help enhance the features for data visualization."
-  },
-  {
-    "objectID": "posts/Introduction.html",
-    "href": "posts/Introduction.html",
-    "title": "Introduction to Seaborn",
-    "section": "",
-    "text": "Introduction\nSeaborn is a Python data visualization library that helps us create visually appealing statistical graphs. It is built over Matplotlib, providing an interface to create graphics. It works seamlessly with Pandas dataframes and Numpy arrays, performing all the necessary calculations on its backend and letting you focus on your plots’ meaning rather than figuring out how to plot them."
   },
   {
     "objectID": "index.html",
