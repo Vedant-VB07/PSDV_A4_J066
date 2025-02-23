@@ -4,5 +4,5 @@ listing:
   contents: posts
   sort: "order desc"
   type: default
-  categories: true
+  categories: false
 ---
