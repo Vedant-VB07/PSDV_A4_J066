@@ -1,62 +1,4 @@
-/* Animated Dark Gradient Navbar */
-@keyframes gradientAnimation {
-    0% { background: linear-gradient(135deg, #222831, #393E46); }
-    25% { background: linear-gradient(135deg, #1F1F1F, #4B4B4B); }
-    50% { background: linear-gradient(135deg, #0F0F0F, #2C2C2C); }
-    75% { background: linear-gradient(135deg, #232931, #3A3D42); }
-    100% { background: linear-gradient(135deg, #222831, #393E46); }
-}
-
-/* Navbar Styling */
-.navbar {
-    animation: gradientAnimation 8s infinite alternate ease-in-out;
-    padding: 12px 25px;
-    border-radius: 10px;
-    transition: all 0.6s ease-in-out;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-}
-
-/* Navbar Links */
-.navbar a {
-    color: #EAEAEA !important;
-    font-weight: bold;
-    transition: color 0.4s ease-in-out;
-}
-
-/* Navbar Hover Effects */
-.navbar a:hover {
-    color: #FFD700 !important;
-    text-decoration: underline;
-}
-
-/* Soft Glowing Border Effect */
-.navbar {
-    border: 2px solid rgba(255, 255, 255, 0.1);
-}
-
-/* Smooth Hover Effect */
-.navbar a {
-    position: relative;
-    transition: all 0.4s ease-in-out;
-}
-
-.navbar a::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background: #FFD700;
-    bottom: -5px;
-    left: 0;
-    transform: scaleX(0);
-    transition: transform 0.4s ease-in-out;
-}
-
-.navbar a:hover::after {
-    transform: scaleX(1);
-}
-
-/* Starry Night Background */
+/* 🌌 Starry Night Background */
 body {
     background: #000;
     overflow: hidden;
@@ -64,7 +6,7 @@ body {
     padding: 0;
 }
 
-/* Creating multiple stars */
+/* Generating multiple stars */
 @keyframes twinkle {
     0% { opacity: 0.3; }
     50% { opacity: 1; }
@@ -85,7 +27,6 @@ body {
         900px 300px white, 1000px 500px white, 1100px 200px white;
 }
 
-/* Adding multiple layers of stars */
 .stars:after {
     content: "";
     position: absolute;
@@ -95,4 +36,36 @@ body {
     top: -500px;
     left: -500px;
     box-shadow: inherit;
+}
+
+/* 🚀 Smooth Transitioning Dark Navbar */
+@keyframes navbarFade {
+    0% { background: rgba(20, 20, 20, 0.8); }
+    50% { background: rgba(15, 15, 15, 0.9); }
+    100% { background: rgba(10, 10, 10, 1); }
+}
+
+.navbar {
+    animation: navbarFade 5s infinite alternate ease-in-out;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    padding: 15px 25px;
+    border-radius: 8px;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* 🔗 Pop-Out Hover Effect for ALL Links */
+a {
+    color: white !important;
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* Hover Effect: Scale Up and Glow */
+a:hover {
+    transform: scale(1.2);
+    color: #FFD700 !important; /* Glowing Golden Effect */
+    text-shadow: 0px 0px 10px rgba(255, 215, 0, 0.8);
 }
