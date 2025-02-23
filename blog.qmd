@@ -1,17 +1,8 @@
 ---
-title: "Blog"
+title: "These are the guided sections for knowing Seaborn"
 listing:
   contents: posts
-  sort: "date desc"
+  sort: "date asc"
   type: default
   categories: true
-  filter: 
-    - text: "Seaborn Basics"
-      value: seaborn-basics
-    - text: "Visualization Examples"
-      value: visualization
-    - text: "Use Cases"
-      value: use-cases
-    - text: "Conclusion"
-      value: conclusion
 ---
