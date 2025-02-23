@@ -47,31 +47,11 @@ body {
 }
 
 .navbar {
-    animation: navbarFade 5s infinite alternate ease-in-out;
+    background: linear-gradient(135deg, #444, #111);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
     padding: 15px 25px;
     border-radius: 8px;
     transition: all 0.4s ease-in-out;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
 }
 
-/* 🔗 Pop-Out Hover Effect for ALL Links */
-a {
-    color: white !important;
-    font-weight: bold;
-    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
-    display: inline-block;
-    text-decoration: none;
-}
-
-/* Hover Effect: Scale Up and Glow */
-a:hover {
-    transform: scale(1.2);
-    color: #FFD700 !important; /* Glowing Golden Effect */
-    text-shadow: 0px 0px 10px rgba(255, 215, 0, 0.8);
-}
-
-/* 🎨 Additional Styling for Smoothness */
-.navbar, a {
-    transition: all 0.4s ease-in-out;
-}
