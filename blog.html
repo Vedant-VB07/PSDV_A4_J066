@@ -78,9 +78,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -130,7 +130,7 @@ window.Quarto = {
 
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -166,9 +166,7 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(5)</span></div><div class="category" data-category="Q29uY2x1c2lvbg==">Conclusion <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SW50cm9kdWN0aW9u">Introduction <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UmVmZXJlbmNlcw==">References <span class="quarto-category-count">(1)</span></div><div class="category" data-category="VXNlJTIwQ2FzZXM=">Use Cases <span class="quarto-category-count">(1)</span></div></div></div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -197,7 +195,7 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="UmVmZXJlbmNlcw==" data-listing-file-modified-sort="1740301134531" data-listing-reading-time-sort="1" data-listing-word-count-sort="89">
+<div class="quarto-post image-right" data-index="0" data-categories="UmVmZXJlbmNlcw==" data-listing-file-modified-sort="1740301351285" data-listing-reading-time-sort="1" data-listing-word-count-sort="89">
 <div class="thumbnail">
 <p><a href="./posts/reference.html" class="no-external"></a></p><a href="./posts/reference.html" class="no-external">
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
@@ -210,11 +208,6 @@ window.Quarto = {
 <div class="listing-subtitle">
 <a href="./posts/reference.html" class="no-external"></a>
 </div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('UmVmZXJlbmNlcw=='); return false;">
-References
-</div>
-</div>
 <div class="listing-description">
 <a href="./posts/reference.html" class="no-external">For a deeper understanding of Seaborn and its capabilities, explore the following resources:</a>
 </div>
@@ -224,7 +217,7 @@ References
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="Q29uY2x1c2lvbg==" data-listing-file-modified-sort="1740301134526" data-listing-reading-time-sort="1" data-listing-word-count-sort="165">
+<div class="quarto-post image-right" data-index="1" data-categories="Q29uY2x1c2lvbg==" data-listing-file-modified-sort="1740301351280" data-listing-reading-time-sort="1" data-listing-word-count-sort="165">
 <div class="thumbnail">
 <p><a href="./posts/Conclusion.html" class="no-external"></a></p><a href="./posts/Conclusion.html" class="no-external">
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
@@ -237,11 +230,6 @@ References
 <div class="listing-subtitle">
 <a href="./posts/Conclusion.html" class="no-external"></a>
 </div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Q29uY2x1c2lvbg=='); return false;">
-Conclusion
-</div>
-</div>
 <div class="listing-description">
 <a href="./posts/Conclusion.html" class="no-external">Seaborn is a powerful and intuitive <strong>data visualization library</strong> that simplifies the process of creating <strong>statistical graphics</strong> in Python. Built on <strong>Matplotlib</strong> and integrated with <strong>…</strong><strong></strong></a>
 </div>
@@ -251,7 +239,7 @@ Conclusion
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="VXNlJTIwQ2FzZXM=" data-listing-file-modified-sort="1740301134531" data-listing-reading-time-sort="1" data-listing-word-count-sort="185">
+<div class="quarto-post image-right" data-index="2" data-categories="VXNlJTIwQ2FzZXM=" data-listing-file-modified-sort="1740301351285" data-listing-reading-time-sort="1" data-listing-word-count-sort="185">
 <div class="thumbnail">
 <p><a href="./posts/Use_Cases.html" class="no-external"></a></p><a href="./posts/Use_Cases.html" class="no-external">
 <p class="card-img-top"><img src="posts/Use_Cases_files/figure-html/cell-2-output-1.png"  class="thumbnail-image card-img"/></p>
@@ -264,11 +252,6 @@ Conclusion
 <div class="listing-subtitle">
 <a href="./posts/Use_Cases.html" class="no-external"></a>
 </div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('VXNlJTIwQ2FzZXM='); return false;">
-Use Cases
-</div>
-</div>
 <div class="listing-description">
 <a href="./posts/Use_Cases.html" class="no-external">Use Cases of Seaborn:</a>
 </div>
@@ -278,7 +261,7 @@ Use Cases
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="SW50cm9kdWN0aW9u" data-listing-file-modified-sort="1740301134526" data-listing-reading-time-sort="1" data-listing-word-count-sort="59">
+<div class="quarto-post image-right" data-index="3" data-categories="SW50cm9kdWN0aW9u" data-listing-file-modified-sort="1740301351280" data-listing-reading-time-sort="1" data-listing-word-count-sort="59">
 <div class="thumbnail">
 <p><a href="./posts/Introduction.html" class="no-external"></a></p><a href="./posts/Introduction.html" class="no-external">
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
@@ -291,11 +274,6 @@ Use Cases
 <div class="listing-subtitle">
 <a href="./posts/Introduction.html" class="no-external"></a>
 </div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('SW50cm9kdWN0aW9u'); return false;">
-Introduction
-</div>
-</div>
 <div class="listing-description">
 <a href="./posts/Introduction.html" class="no-external">Seaborn is a Python data visualization library that helps us create visually appealing statistical graphs. It is built over Matplotlib, providing an interface to create…</a>
 </div>
@@ -305,7 +283,7 @@ Introduction
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-listing-file-modified-sort="1740301134526" data-listing-reading-time-sort="1" data-listing-word-count-sort="115">
+<div class="quarto-post image-right" data-index="4" data-listing-file-modified-sort="1740301351280" data-listing-reading-time-sort="1" data-listing-word-count-sort="115">
 <div class="thumbnail">
 <p><a href="./posts/Installation and Setup.html" class="no-external"></a></p><a href="./posts/Installation and Setup.html" class="no-external">
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
