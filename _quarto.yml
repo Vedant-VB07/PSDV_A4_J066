@@ -11,14 +11,13 @@ website:
       - href: blog.qmd
         text: Blog
 
-
 format:
   html:
     theme: darkly
     mainfont: "Roboto"
     code-copy: true
     code-overflow: wrap
-
+    css: styles.css 
 
 execute:
   freeze: auto
