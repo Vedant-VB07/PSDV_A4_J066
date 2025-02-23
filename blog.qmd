@@ -2,7 +2,16 @@
 title: "Blog"
 listing:
   contents: posts
-  categories: true
   sort: "date desc"
-  filter-default: false  # This removes the "All" option
+  type: default
+  categories: true
+  filter: 
+    - text: "Seaborn Basics"
+      value: seaborn-basics
+    - text: "Visualization Examples"
+      value: visualization
+    - text: "Use Cases"
+      value: use-cases
+    - text: "Conclusion"
+      value: conclusion
 ---
