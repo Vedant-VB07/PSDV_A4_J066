@@ -1,0 +1,30 @@
+/* Gradient Navbar */
+.navbar {
+    background: linear-gradient(135deg, #4A90E2, #8E44AD); /* Cool gradient colors */
+    border-bottom: 3px solid #6C5CE7;
+    padding: 10px 20px;
+}
+
+/* Navbar Links */
+.navbar a {
+    color: white !important;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Navbar Hover Effects */
+.navbar a:hover {
+    color: #FFD700 !important; /* Gold hover effect */
+    text-decoration: underline;
+}
+
+/* Style Active Page */
+.navbar .active {
+    border-bottom: 2px solid #FFD700; /* Highlight active page */
+}
+
+/* Adding Soft Shadows */
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+}
