@@ -4,16 +4,16 @@ format: html
 <div class="stars"></div>
 
 
-# Welcome to Our Seaborn Blog! 🎨📊  
+# Welcome to Our Seaborn Blog!📊  
 
 Hello and welcome! 👋  
 
 This blog is dedicated to exploring **Seaborn**, a powerful Python library for data visualization. Whether you're a beginner or an experienced data analyst, you'll find useful insights, practical examples, and hands-on demonstrations to help you create stunning visualizations with ease.  
 
 ## What You'll Find Here:  
-- ✅ **Step-by-step guides** on Seaborn's features  
-- ✅ **Code snippets** with explanations  
-- ✅ **Real-world use cases** and best practices  
-- ✅ **Interactive visualizations**  
+- **Step-by-step guides** on Seaborn's features  
+- **Code snippets** with explanations  
+- **Real-world use cases** and best practices  
+- **Interactive visualizations**  
 
 Feel free to explore, experiment, and enhance your data storytelling skills. Let’s dive into the world of **Seaborn** and make data visualization effortless! 🚀  
