@@ -169,19 +169,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="key-features-and-explanation" class="level1">
 <h1><strong>Key Features and Explanation</strong></h1>
-<section id="loading-built-in-datasets" class="level3">
-<h3 class="anchored" data-anchor-id="loading-built-in-datasets">📌 Loading Built-In Datasets</h3>
+<p>Some of the Key features in Seaborn are:<br> - Built-In Datasets - Default Colour Themes - Simplified Code</p>
+<section id="built-in-datasets" class="level3">
+<h3 class="anchored" data-anchor-id="built-in-datasets">📌 Built-In Datasets</h3>
 <p>Seaborn provides access to a collection of built-in datasets. These can be used to demonstrate Seaborn’s functionalities and data visualization capabilities.<br></p>
 <p>We can load a built-in dataset from Seaborn using the following code:</p>
-<div id="cell-5" class="cell" data-execution_count="28">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>flights <span class="op">=</span> sns.load_dataset(<span class="st">'flights'</span>)  <span class="co"># Load the 'flights' dataset</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(flights.head())  <span class="co"># Printing the first 5 rows of the dataset</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="cell-6" class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Loading libraries</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>flights <span class="op">=</span> sns.load_dataset(<span class="st">'flights'</span>)  <span class="co"># Load the 'flights' dataset</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(flights.head())  <span class="co"># Printing the first 5 rows of the dataset</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>   year month  passengers
 0  1949   Jan         112
@@ -195,12 +197,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="default-colour-themes" class="level3">
 <h3 class="anchored" data-anchor-id="default-colour-themes">📌 Default Colour Themes</h3>
 <ul>
-<li>Seaborn provides us with some default colour themes and palettes which make it easy to plot visually appealing graphs. We can also create and save our own colour themes and palettes to use them in future.</li>
-<li>Some examples of these colour themes are ticks, whitegrid, darkgrid, dark and white. Some exaples of the colour palettes are pastel, bright, muted and deep.</li>
-<li>The colour themes seem to enhance the font colour, background colour, gridlines and the overall appearance of our plots to make it look cleaner.</li>
+<li>Seaborn provides some default colour themes and palettes, making it easy to plot visually appealing graphs. We can also create and save our colour themes and palettes for future use.</li>
+<li>Some examples of these colour themes are ticks, whitegrid, darkgrid, dark, and white. Some examples of the colour palettes are pastel, bright, muted, and deep.</li>
+<li>The colour themes enhance the font colour, background colour, gridlines, and the overall appearance of our plots to make them look cleaner.</li>
 </ul>
 <p>These themes and palettes can be used in the following way:</p>
-<div id="cell-9" class="cell" data-execution_count="34">
+<div id="cell-10" class="cell" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Applying darkgid theme</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>sns.set_theme(style<span class="op">=</span><span class="st">"darkgrid"</span>, context<span class="op">=</span><span class="st">"notebook"</span>, palette<span class="op">=</span><span class="st">'bright'</span>)</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">8</span>))</span>
@@ -209,7 +211,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    plt.plot(flights[flights[<span class="st">'year'</span>] <span class="op">==</span> y][<span class="st">'month'</span>], flights[flights[<span class="st">'year'</span>] <span class="op">==</span> y][<span class="st">'passengers'</span>], label<span class="op">=</span><span class="ss">f'</span><span class="sc">{</span>y<span class="sc">}</span><span class="ss">'</span>)</span>
 <span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Month'</span>)</span>
 <span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Number of passengers'</span>)</span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Number of Passengers travelling in flights'</span>)</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Number of Passengers traveling in flights'</span>)</span>
 <span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>plt.legend()</span>
 <span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
 <span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -221,19 +223,38 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p>The above line plot shows trend of the number of passengers travelling over months for years from 1949 to 1960.</p>
-<p><b>Now let us explore some plot types that work effectively in Seaborn.</b></p>
+<p>The above line plot shows the trend of the number of passengers traveling over months for years from 1949 to 1960.</p>
+</section>
+<section id="simplified-code" class="level3">
+<h3 class="anchored" data-anchor-id="simplified-code">📌 Simplified Code</h3>
+<ul>
+<li>Seaborn is designed so that it is easy to visualize data while working on some datasets. Seaborn can support several different dataset formats, which are usually stored as objects of Numpy and Pandas libraries. &nbsp;</li>
+<li>Seaborn will take care of small details like colours, legends, and labels while working with datasets, enabling us to plot complex graphs with fewer lines of code than Matplotlib.</li>
+</ul>
+<p>We will see the implementation of this property later in this blog while talking about the Regression plot.</p>
+<p><b>Now let’s explore some plot types that work effectively in Seaborn.</b></p>
 </section>
 <section id="regression-plot" class="level3">
 <h3 class="anchored" data-anchor-id="regression-plot">📌 Regression Plot</h3>
 <p>This type of plot is helpful if we want to study the relationship between variables. Seaborn has a function regplot(), which can be used to plot regression plots, making it easier to understand the relationship between variables and fit a linear regression model for the data.</p>
-<div id="cell-14" class="cell" data-execution_count="35">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>tips <span class="op">=</span> sns.load_dataset(<span class="st">"tips"</span>)</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>sns.regplot(x<span class="op">=</span><span class="st">'total_bill'</span>, y<span class="op">=</span><span class="st">'tip'</span>, data<span class="op">=</span>tips, line_kws<span class="op">=</span>{<span class="st">'color'</span>: <span class="st">'orange'</span>})  <span class="co"># Create a regression plot</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Total bill'</span>)</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Tips'</span>)</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Tips in a restaurant'</span>)</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>First lets plot using Matplotlib:</p>
+<div id="cell-19" class="cell" data-execution_count="9">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Loading the built-in dataset</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>tips <span class="op">=</span> sns.load_dataset(<span class="st">'tips'</span>)</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Plotting the scatter plot</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>plt.scatter(tips[<span class="st">'total_bill'</span>], tips[<span class="st">'tip'</span>]) </span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Using numpy to get the slope and Y-intercept of the Regression line</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>slope, y_intercept <span class="op">=</span> np.polyfit(tips[<span class="st">'total_bill'</span>], tips[<span class="st">'tip'</span>], <span class="dv">1</span>) </span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Plotting the regression line</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>plt.plot(tips[<span class="st">'total_bill'</span>], slope <span class="op">*</span> tips[<span class="st">'total_bill'</span>] <span class="op">+</span> y_intercept, color<span class="op">=</span><span class="st">'orange'</span>) </span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Total Bill'</span>)</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Tip'</span>)</span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Tips in a retaurant'</span>)</span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -242,25 +263,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<ul>
-<li>This above graph tells about how individuals tip varying based on the total bill. The orange line is the regression line which is the best fit line for the data and tries to capture the overall trend.</li>
-<li>The orange coloured shaded region around the regression line shows how reliable is the regression model of our data. The wider the region, more is the uncertainty of our regression model.</li>
-<li>By using line_kws we are applying orange colour to our best fit line.</li>
-</ul>
-<p>Also you might be wondering why the darkgrid colour theme was applied even though we have not applied any theme in the above code snippet; it is because once sns.set_theme() is called, it sets the theme as the default theme and applies it all the plots.</p>
-</section>
-<section id="violin-plot" class="level3">
-<h3 class="anchored" data-anchor-id="violin-plot">📌 Violin Plot</h3>
-<p>A violin plot is mix of kernel density estimate (KDE) plot and a boxplot. It is very useful in instances when we want to compare statistical data over multiple groups in a dataset. They help to visualize the spread, density, and shape of the data.</p>
-<div id="cell-19" class="cell" data-execution_count="37">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">6</span>))</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>sns.violinplot(x<span class="op">=</span><span class="st">"day"</span>, y<span class="op">=</span><span class="st">"total_bill"</span>, hue<span class="op">=</span><span class="st">"sex"</span>, data<span class="op">=</span>tips, split<span class="op">=</span><span class="va">True</span>)</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Day'</span>)</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Total bill'</span>)</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>plt.legend(loc<span class="op">=</span><span class="st">'upper right'</span>)</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Distribution of tips based on days'</span>)</span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>As you can see, we needed 8 lines of code to plot a regression plot using Matplotlib. Below, you can see how Seaborn can generate the same plot in just 2 to 3 lines of code. This demonstrates Seaborn’s simplified coding feature.</p>
+<div id="cell-21" class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>tips <span class="op">=</span> sns.load_dataset(<span class="st">"tips"</span>)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>sns.regplot(x<span class="op">=</span><span class="st">'total_bill'</span>, y<span class="op">=</span><span class="st">'tip'</span>, data<span class="op">=</span>tips, line_kws<span class="op">=</span>{<span class="st">'color'</span>: <span class="st">'orange'</span>})  <span class="co"># Create a regression plot</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Total bill'</span>)</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Tips'</span>)</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Tips in a restaurant'</span>)</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -270,9 +280,36 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <ul>
-<li>In the above plot we are comparing the distribution of total bill between males and females for each of the week. The wider area tells us about the concentration of data. It also tells about the shape of the distribution.</li>
-<li>We are using hue=“sex” to plot the distribution separately based on sex of the customers.</li>
-<li>Further we are using split=True to split the violin graph into two parts and showing them side by side for an easy comparsion between them.</li>
+<li>The above graph shows how individuals’ tips vary based on the total bill. The orange line is the regression line, the best-fit line for the data, and tries to capture the overall trend.</li>
+<li>The orange-coloured shaded region around the regression line shows how reliable the regression model of our data is. The wider the area, the more the uncertainty of our regression model.</li>
+<li>Using line_kws, we apply orange color to our best-fit line.</li>
+</ul>
+<p>Also, you might be wondering why the darkgrid colour theme was applied even though we have not used any theme in the above code snippets; it is because once sns.set_theme() is called, it sets the theme as the default theme and applies it all the plots.</p>
+</section>
+<section id="violin-plot" class="level3">
+<h3 class="anchored" data-anchor-id="violin-plot">📌 Violin Plot</h3>
+<p>A violin plot is a mix of a kernel density estimate (KDE) plot and a boxplot. It is beneficial when we want to compare statistical data over multiple groups in a dataset. They help visualize the data’s spread, density, and shape.</p>
+<div id="cell-26" class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">6</span>))</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>sns.violinplot(x<span class="op">=</span><span class="st">"day"</span>, y<span class="op">=</span><span class="st">"total_bill"</span>, hue<span class="op">=</span><span class="st">"sex"</span>, data<span class="op">=</span>tips, split<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Day'</span>)</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Total bill'</span>)</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>plt.legend(loc<span class="op">=</span><span class="st">'upper right'</span>)</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Distribution of tips based on days'</span>)</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Key Features and Explanation_files/figure-html/cell-6-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li>In the above plot, we compare the distribution of total bills between males and females for each week. The wider area tells us about the concentration of data. It also speaks about the shape of the distribution.</li>
+<li>We are using hue=“sex” to plot the distribution separately based on the sex of the customers.</li>
+<li>Further, we are using split=True to split the violin graph into two parts and show them side by side for easy comparison.</li>
 </ul>
 
 
